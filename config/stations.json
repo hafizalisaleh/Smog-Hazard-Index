@@ -1,0 +1,124 @@
+{
+  "stations": [
+    {
+      "id": "uet",
+      "display_name": "UET Lahore",
+      "district": "Lahore",
+      "latitude": 31.5796,
+      "longitude": 74.3562,
+      "elevation_m": 217.0,
+      "type": "EPA Reference Monitor",
+      "aliases": ["uet", "uet(lahore)", "uet-lhr", "uet-lhrpm2.5"]
+    },
+    {
+      "id": "lwmc",
+      "display_name": "LWMC Lahore",
+      "district": "Lahore",
+      "latitude": 31.5645,
+      "longitude": 74.3200,
+      "elevation_m": 215.0,
+      "type": "EPA Reference Monitor",
+      "aliases": ["lwmc", "lwmc(lahore)", "lwmc-lhr", "lwmc-lhrpm2.5"]
+    },
+    {
+      "id": "barki",
+      "display_name": "Barki Road Lahore",
+      "district": "Lahore",
+      "latitude": 31.5200,
+      "longitude": 74.4800,
+      "elevation_m": 219.0,
+      "type": "Monitoring Station",
+      "aliases": ["barki", "barki(lahore)", "barki-lhr"]
+    },
+    {
+      "id": "kahna",
+      "display_name": "Kahna Nau Hospital Lahore",
+      "district": "Lahore",
+      "latitude": 31.3688,
+      "longitude": 74.3644,
+      "elevation_m": 210.0,
+      "type": "Hospital Monitoring Station",
+      "aliases": ["kahna", "kahna(lahore)", "kahna nau hospital-lhr", "kahna nau hospital-lhrpm2.5"]
+    },
+    {
+      "id": "shahdara",
+      "display_name": "Shahdara Hospital Lahore",
+      "district": "Lahore",
+      "latitude": 31.6212,
+      "longitude": 74.2831,
+      "elevation_m": 214.0,
+      "type": "Teaching Hospital Station",
+      "aliases": ["shadarah(lahore)", "shahdara", "govt. teaching hospital shahdara-lhr"]
+    },
+    {
+      "id": "safari_park",
+      "display_name": "Safari Park Lahore",
+      "district": "Lahore",
+      "latitude": 31.3820,
+      "longitude": 74.2255,
+      "elevation_m": 208.0,
+      "type": "Urban Background Monitor",
+      "aliases": ["safari park(lahore)", "safari park", "safari park-lhr", "safari park-lhr pm2.5"]
+    },
+    {
+      "id": "punjab_university",
+      "display_name": "Punjab University Lahore",
+      "district": "Lahore",
+      "latitude": 31.4985,
+      "longitude": 74.2982,
+      "elevation_m": 213.0,
+      "type": "Academic Research Station",
+      "aliases": ["punjab university(lahore)", "punjab university", "punjab university-lhr"]
+    },
+    {
+      "id": "pkli",
+      "display_name": "PKLI Lahore",
+      "district": "Lahore",
+      "latitude": 31.4688,
+      "longitude": 74.4375,
+      "elevation_m": 216.0,
+      "type": "Hospital Monitoring Station",
+      "aliases": ["pkli(lahore)", "pkli", "pkli-lhr"]
+    },
+    {
+      "id": "fmdrc",
+      "display_name": "FMDRC Lahore",
+      "district": "Lahore",
+      "latitude": 31.5360,
+      "longitude": 74.3440,
+      "elevation_m": 216.0,
+      "type": "Research Centre Station",
+      "aliases": ["fmdrc", "fmdrc-lhr", "fmdrc-lhr  pm2.5"]
+    },
+    {
+      "id": "gcw_gujranwala",
+      "display_name": "GCW Gujranwala",
+      "district": "Gujranwala",
+      "latitude": 32.1617,
+      "longitude": 74.1883,
+      "elevation_m": 226.0,
+      "type": "College Monitoring Station",
+      "aliases": ["gcw gujranwala", "gcw gujranwala pm2.5"]
+    },
+    {
+      "id": "dc_office_gujranwala",
+      "display_name": "DC Office Gujranwala",
+      "district": "Gujranwala",
+      "latitude": 32.1872,
+      "longitude": 74.1945,
+      "elevation_m": 227.0,
+      "type": "Administrative Station",
+      "aliases": ["dc office gujranwala", "dc office gujranwala pm2.5"]
+    },
+    {
+      "id": "dhq_sheikhupura",
+      "display_name": "DHQ Sheikhupura",
+      "district": "Sheikhupura",
+      "latitude": 31.7150,
+      "longitude": 73.9850,
+      "elevation_m": 236.0,
+      "type": "Hospital Monitoring Station",
+      "aliases": ["shiekhupura", "sheikhupura", "dhq sheikhupura", "dhq sheikhupura  pm2.5"]
+    }
+  ]
+}

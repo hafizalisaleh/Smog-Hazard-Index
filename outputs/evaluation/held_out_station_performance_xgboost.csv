@@ -1,0 +1,13 @@
+station_id,station_name,district,n_samples,r2,rmse,mae,mbe,nmb_pct,ioa,fac2
+barki,Barki Road Lahore,Lahore,190,0.9743,15.27,11.97,-3.25,-2.71,0.9935,0.9895
+dc_office_gujranwala,DC Office Gujranwala,Gujranwala,338,0.9087,17.29,14.37,9.18,11.98,0.9753,0.8935
+dhq_sheikhupura,DHQ Sheikhupura,Sheikhupura,347,0.9453,16.74,12.88,-3.05,-2.85,0.9855,1.0
+fmdrc,FMDRC Lahore,Lahore,147,0.9459,15.3,11.95,2.59,2.38,0.9859,0.9932
+gcw_gujranwala,GCW Gujranwala,Gujranwala,213,0.8688,25.27,19.98,-11.53,-9.93,0.9662,0.9718
+kahna,Kahna Nau Hospital Lahore,Lahore,329,0.9731,16.89,13.08,-5.24,-3.86,0.9931,0.9939
+lwmc,LWMC Lahore,Lahore,327,0.9677,17.25,13.58,-6.97,-5.03,0.9918,0.9939
+pkli,PKLI Lahore,Lahore,329,0.9509,20.65,13.79,1.92,1.64,0.9865,0.9453
+punjab_university,Punjab University Lahore,Lahore,342,0.9501,15.28,12.08,5.39,5.63,0.9873,0.9854
+safari_park,Safari Park Lahore,Lahore,337,0.9696,14.97,11.69,-0.21,-0.17,0.9925,0.997
+shahdara,Shahdara Hospital Lahore,Lahore,337,0.9743,17.49,13.16,-5.77,-3.93,0.9933,0.9822
+uet,UET Lahore,Lahore,350,0.9728,18.01,12.88,-2.4,-1.69,0.9929,0.9829

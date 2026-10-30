@@ -1,0 +1,100 @@
+# ==============================================================================
+# Configuration: Machine Learning for Ground-Level PM2.5 Estimation & SHI
+# EHDS Lab / SUPARCO Internship Project
+# ==============================================================================
+
+project:
+  name: "Smog Hazard Index (SHI) & Ground-Level PM2.5 Estimation"
+  version: "1.0.0"
+  study_area: "Punjab Pilot (Lahore, Gujranwala, Sheikhupura)"
+  crs: "EPSG:4326"
+
+pilot_domain:
+  min_lat: 31.10
+  max_lat: 32.35
+  min_lon: 73.80
+  max_lon: 74.65
+  grid_resolution_deg: 0.01  # Approximately 1 km at this latitude
+
+paths:
+  raw_ground_data:
+    - "Hourly PM2.5 data from January to April 2026 of 3 districts, Lahore, Gujranwala, and Shakupura.xlsx"
+    - "Hourly PM2.5 data from May 2026 of 3 districts Lahore, Gujranwala, and Sheikhupura - Copy (2).xlsx"
+    - "PM 2.5 DATA FROM JUNE TO DECEMBER 2025.xlsx"
+  stations_meta: "config/stations.json"
+  processed_dir: "data/processed"
+  grids_dir: "data/grids"
+  outputs_dir: "outputs"
+
+cleaning:
+  max_interp_gap_hours: 6
+  spike_min_ugm3: 700.0
+  spike_ratio_to_median: 5.0
+  spike_window_hours: 336
+  min_valid_value: 0.0
+  max_valid_value: 1200.0
+
+collocation:
+  max_spatial_distance_km: 15.0
+  temporal_window_hours: 1
+
+features:
+  use_cyclical_time: true
+  use_meteorological_stagnation: true
+  stagnation_wind_threshold_ms: 2.0
+  stagnation_pblh_threshold_m: 500.0
+  stagnation_rh_threshold_pct: 70.0
+
+models:
+  target_variable: "pm25"
+  log_transform_target: true
+  random_state: 42
+  
+  linear_baseline:
+    alpha: 1.0
+    fit_intercept: true
+  
+  random_forest:
+    n_estimators: 200
+    max_depth: 16
+    min_samples_split: 5
+    min_samples_leaf: 2
+    n_jobs: -1
+
+  xgboost:
+    n_estimators: 300
+    learning_rate: 0.05
+    max_depth: 6
+    subsample: 0.8
+    colsample_bytree: 0.8
+    reg_alpha: 0.1
+    reg_lambda: 1.0
+    n_jobs: -1
+
+cross_validation:
+  strategy: "spatial_group_kfold"  # options: spatial_group_kfold, leave_one_station_out, temporal_block
+  n_splits: 5
+  station_group_col: "station_id"
+
+smog_hazard_index:
+  weights:
+    pm25_standardized: 0.50
+    aod_standardized: 0.20
+    no2_standardized: 0.10
+    so2_standardized: 0.05
+    stagnation_index: 0.15
+  
+  # Severity classification thresholds for SHI (scale 0 - 100)
+  categories:
+    Low: [0.0, 25.0]
+    Moderate: [25.0, 50.0]
+    High: [50.0, 70.0]
+    Very High: [70.0, 85.0]
+    Extreme: [85.0, 100.0]
+
+  category_colors:
+    Low: "#2ca02c"        # Green
+    Moderate: "#ff7f0e"   # Orange
+    High: "#d62728"       # Red
+    Very High: "#9467bd"  # Purple
+    Extreme: "#8c564b"    # Maroon / Dark Brown
