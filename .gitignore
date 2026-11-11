@@ -65,3 +65,8 @@ models/
 # Output logs and caches
 outputs/arima_only/
 *.log
+
+# OS files and local attachments
+.DS_Store
+Thumbs.db
+attached_assets/
