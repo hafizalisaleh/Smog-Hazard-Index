@@ -40,10 +40,27 @@ ENV/
 
 # Heavy binary data (large NetCDF/HDF downloads)
 *.nc
+*.nc4
 *.hdf
 *.h5
 *.tif
 *.tiff
+
+# Local datasets and generated analysis artifacts
+data/
+outputs/
+models/
+*.csv
+*.xlsx
+*.parquet
+*.feather
+*.pkl
+*.joblib
+
+# Local secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
 
 # Output logs and caches
 outputs/arima_only/

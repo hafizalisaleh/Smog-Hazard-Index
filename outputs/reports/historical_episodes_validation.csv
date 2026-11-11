@@ -1,4 +1,0 @@
-episode_name,date,episode_type,expected_category,mean_estimated_pm25_ugm3,mean_shi_score,pct_area_extreme,pct_area_very_high,dominant_hazard_category
-Peak Smog Emergency (Nov 2025),2025-11-15,Acute Agricultural Burning & Atmospheric Stagnation,Extreme,289.9,78.6,0.4,98.5,Very High
-Winter Fog-Smog Inversion (Dec 2025),2025-12-25,Nocturnal Inversion & Shallow PBLH Stagnation,Very High / Extreme,275.9,77.1,0.1,96.9,Very High
-Monsoon Clean Baseline (Jul 2025),2025-07-15,Wet Deposition & Active Atmospheric Dispersion,Low / Moderate,90.8,52.4,0.0,0.0,High
